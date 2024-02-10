@@ -58,5 +58,24 @@ VALUES
 (10, 'Vegetable Salad', 'Mixed Vegetables, Spices', 199, 'A');
 
 SELECT * FROM MENU; 
+INSERT INTO PAYMENT(PAYMENT_ID,PAYMENT_TIME,AMT,PTYPE,PSTATUS,CUSTOMER_ID)
+VALUES (2,"2024-03-01 10:30:00",120,'O','D',4),
+(3,"2024-03-02 10:40:00",130,'O','D',5),
+(4,"2024-03-01 11:35:00",120,'O','D',1),
+(5,"2024-03-02 11:40:00",100,'O','D',3),
+(6,"2024-03-02 10:40:00",199,'O','D',5),
+(7,"2024-03-01 11:35:00",120,'O','D',1),
+(8,"2024-03-02 11:40:00", 100,'O','D',3);
+
+SELECT * FROM PAYMENT;
+
+INSERT INTO RATING (REMARKS, TRANSACTION_NUMBER, SCORE, PDATE, MENU_ID, RESTAURANT_ID)
+VALUES
+('Excellent service and delicious food!', 6, '5', '2024-02-10', 1, 1),
+('Great experience, will definitely order again.', 7, '5', '2024-02-09', 2, 2),
+('Fast delivery and good quality.', 8, '5', '2024-02-08', 3, 3),
+('Very satisfied with the meal.', 9, '5', '2024-02-07', 4, 4),
+('Outstanding taste and presentation.', 10, '5', '2024-02-06', 5, 5);
+
 
 
